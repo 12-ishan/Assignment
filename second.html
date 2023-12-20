@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 20px;
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+        }
+        .btn{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <button class="btn" id="redBtn">Red</button>
+    <button class="btn" id="blueBtn">blue</button>
+    <button class="btn" id="greenBtn">green</button>
+    <script src="jQuery.js"></script>
+    <script>
+         $(document).ready(function(){
+            $('#redBtn').click(function(){
+                $('.container').css("background", "red");
+            });
+            $('#blueBtn').click(function(){
+                $('.container').css("background", "blue");
+            });
+            $('#greenBtn').click(function(){
+                $('.container').css("background", "green");
+            });
+         });
+    </script>
+</body>
+</html>
